@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content= "Welcome to the most extraordinary hotel in Boston Massachusetts">
+  <meta name= "keywords" content="hotel, boston hotel, new england hotel">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css">
+  <title>Hotel BT | About</title>
+</head>
+<body>
+  <header>
+    <nav id= "navbar">
+      <div class="container"> <!--keeps navbar background stretched across entire page while also keeping the content centered within container and not sticking to the edges of page when you expand it on a browser-->
+        <h1 class="logo"><a href="index.html">HBT</a></h1> <!--best practice is to not have more than one of the same IDs, use for things that don't have duplicates-->
+      <ul>
+        <li><a href="index.html">Home</a></li> <!-- class="current" makes it so whatever page your on the selected hover color will be highlighted when you are on that particular page-->
+        <li><a class="current" href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      </div>
+      
+    </nav>
+  </header>
+
+  <section id="about-info" class="bg-light py-3">
+    <div class="container">
+      <div class="info-left">
+        <h1 class= "l-heading"><span class="text-primary">About</span> Hotel BT</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, debitis voluptatum, quasi ratione exercitationem itaque earum aliquid enim nesciunt qui dolores. Iusto fuga laudantium autem eum temporibus animi numquam sit?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos temporibus facilis saepe numquam accusamus. Nesciunt totam illo eos nobis sit.</p>
+      </div>
+      <div class="info-right">
+        <img src="./img/photo-2.jpg" alt="hotel">
+      </div>
+    </div>
+  </section>
+
+  <div class="clr"></div> <!--clears floats to reset next section-->
+
+  <section id="testimonials" class="py-3">
+    <div class="container">
+        <h2 class="l-heading">What Our Guests Say</h2>
+        <div class="testimonial bg-primary">
+          <img src="./img/person-1.jpg" alt="Samantha">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vel commodi voluptatibus minima. Modi molestias harum nesciunt quo quis aperiam ullam perspiciatis neque ipsum. Eveniet corporis asperiores dicta tempora laudantium ipsam eaque quo. Ea libero autem vitae dignissimos sint temporibus.</p>
+        </div>
+        <div class="testimonial bg-primary">
+          <img src="./img/person-2.jpg" alt="Jen">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vel commodi voluptatibus minima. Modi molestias harum nesciunt quo quis aperiam ullam perspiciatis neque ipsum. Eveniet corporis asperiores dicta tempora laudantium ipsam eaque quo. Ea libero autem vitae dignissimos sint temporibus.</p>
+        </div>
+    </div>
+
+  </section>
+
+  
+  
+  <footer id="main-footer"><!--use "main" because other subsections could have footers-->
+    <p>Hotel BT &copy;2020, All Rights Reserved </p>
+
+  </footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content= "Welcome to the most extraordinary hotel in Boston Massachusetts">
+  <meta name= "keywords" content="hotel, boston hotel, new england hotel">
+  <script src="https://kit.fontawesome.com/277a2d5b13.js" crossorigin="anonymous"></script> <!--icons supplied by fontawesome.com-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css">
+  <!--  media="...768px" essentially applies to tablet sizing or less  -->
+  <title>Hotel BT | Welcome</title>
+</head>
+<body>
+  <header>
+    <nav id= "navbar">
+      <div class="container"> <!--keeps navbar background stretched across entire page while also keeping the content centered within container and not sticking to the edges of page when you expand it on a browser-->
+        <h1 class="logo"><a href="index.html">HBT</a></h1> <!--best practice is to not have more than one of the same IDs, use for things that don't have duplicates-->
+      <ul>
+        <li><a class="current" href="index.html">Home</a></li> <!-- class="current" makes it so whatever page your on the selected hover color will be highlighted when you are on that particular page-->
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      </div>
+      
+    </nav>
+    <div id="showcase">
+      <div class="container"><!--keeps content within container but allows images to stretch to the edges of the browser-->
+        <div class="showcase-content"> <!--use for written content-->
+          <h1><span class="text-primary">Enjoy</span> Your Stay</h1> <!--The span class allows you to isolate one word and change its color. In this case it's "Enjoy"-->
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, repellendus exercitationem et vero consequatur molestias porro quos quisquam officiis minus voluptatum atque iste laboriosam omnis! Nostrum soluta omnis a nesciunt?</p>
+          <a class="btn" href="about.html">About Our Hotel</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="home-info" class="bg-dark">
+    <div class="info-img"></div>
+    <div class="info-content">
+      <h2><span class="text-primary"span>The History</span> of Our Hotel</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate debitis mollitia sapiente odio odit iste recusandae deserunt quod maiores assumenda veniam velit, eos nostrum aliquid sint reiciendis fugiat quibusdam et porro repellendus. Quasi aspernatur nulla excepturi ratione obcaecati nemo. Quo.</p>
+      <a href="about.html" class="btn btn-light">Read More</a>
+    </div>
+
+  </section>
+
+  <section id="features">
+  <!--use shortcut: .box*(any number) to generate any number of div class duplicates--> 
+    <div class="box btn-light">
+      <i class="fas fa-hotel fa-3x"></i><!--This is a link to awesomefont.com icons, the fa-3x extension increases the size of the icon, ranges from 1-5x-->
+      <h3>Great Location</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, animi?</p>
+    </div> 
+    <div class="box bg-primary">
+      <i class="fas fa-utensils fa-3x"></i>
+      <h3>Free Meals</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, animi?</p>
+    </div>
+    <div class="box btn-light">
+      <i class="fas fa-dumbbell fa-3x"></i>
+      <h3>Fitness Room</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, animi?</p>
+    </div>
+  </section>
+  <div class="clr"></div><!--linked to css, allows you to use padding when floats are present-->
+  <footer id="main-footer"><!--use "main" because other subsections could have footers-->
+    <p>Hotel BT &copy;2020, All Rights Reserved </p>
+
+  </footer>
+</body>
+</html>

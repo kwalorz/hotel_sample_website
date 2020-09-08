@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content= "Welcome to the most extraordinary hotel in Boston Massachusetts">
+  <meta name= "keywords" content="hotel, boston hotel, new england hotel">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css">
+  <script src="https://kit.fontawesome.com/277a2d5b13.js" crossorigin="anonymous"></script> <!--icons supplied by fontawesome.com-->
+  <title>Hotel BT | Contact</title>
+</head>
+<body>
+  <header>
+    <nav id= "navbar">
+      <div class="container"> <!--keeps navbar background stretched across entire page while also keeping the content centered within container and not sticking to the edges of page when you expand it on a browser-->
+        <h1 class="logo"><a href="index.html">HBT</a></h1> <!--best practice is to not have more than one of the same IDs, use for things that don't have duplicates-->
+      <ul>
+        <li><a href="index.html">Home</a></li> <!-- class="current" makes it so whatever page your on the selected hover color will be highlighted when you are on that particular page-->
+        <li><a href="about.html">About</a></li>
+        <li><a class="current"href="contact.html">Contact</a></li>
+      </ul>
+      </div>
+      
+    </nav>
+
+    <section id="contact-form">
+      <div class="container">
+        <h1 class="l-heading"><span class="text-primary">Contact</span> Us</h1>
+        <p>Please fill out the form below to contact us</p>
+        <form action="process.php"> <!--tells where form is sent-->
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea> <!--text area elements require closing tag-->
+            <!--keyboard shortcut: ctrl shift back arrow to highlight, cntrl d to select next duplicate word-->
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </section>
+    <section id="contact-info" class="bg-dark">
+    <div class="box">
+      <i class="fas fa-hotel fa-3x"></i><!--This is a link to awesomefont.com icons, the fa-3x extension increases the size of the icon, ranges from 1-5x-->
+      <h3>Location</h3>
+      <p>50 Main St, boston MA</p>
+    </div> 
+    <div class="box">
+      <i class="fas fa-phone fa-3x"></i>
+      <h3>Phone Number</h3>
+      <p>617-555-5555</p>
+    </div>
+    <div class="box">
+      <i class="fas fa-envelope fa-3x"></i>
+      <h3>Email Address</h3>
+      <p>frontdesk@hotelbt.com</p>
+    </div>
+    </section>
+    
+    <footer id="main-footer"><!--use "main" because other subsections could have footers-->
+      <p>Hotel BT &copy;2020, All Rights Reserved </p>
+  
+    </footer>
+  </body>
+  </html>
+  
